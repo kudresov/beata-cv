@@ -1,0 +1,277 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  font-family: Helvetica, sans-serif;
+  -webkit-print-color-adjust: exact;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+aside {
+  padding: 2rem;
+  flex: 1;
+  color: white;
+  background: rgb(76, 76, 76);
+  max-width: 20rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 1rem 0 0 1rem;
+}
+
+address {
+  margin: 1rem 0 2rem 0;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+li {
+  margin: 0.75rem 0.75rem 0.75rem 0;
+  list-style-type: none;
+  text-indent: -8px;
+}
+
+li:before {
+  color: #9baead;
+  content: '–';
+  text-indent: -8px;
+  position: relative;
+  left: -0.5rem;
+}
+
+p {
+  margin: 0.5rem 0;
+  line-height: 1.3rem;
+}
+
+h3 {
+  margin: 2rem 0 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+article {
+  color: #242525;
+  page-break-inside: avoid;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+
+.section-icon {
+  height: 1.3rem;
+  margin: 0 0.5rem 0 1rem;
+}
+
+#achievements {
+  page-break-inside: avoid;
+}
+
+#name {
+  color: rgb(35, 149, 150);
+}
+
+#trophy {
+  height: 1rem;
+}
+
+aside > section > ul {
+  padding-left: 1rem;
+}
+
+aside > section > ul > li {
+  list-style: none;
+  margin: 0.75rem 0;
+}
+
+aside > section {
+  margin: 3rem 0;
+}
+
+.main {
+  border-radius: 0 1rem 1rem 0;
+  background: white;
+  flex: 1;
+  padding: 2rem 2rem 2rem 3rem;
+  max-width: 40rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.tel {
+  font-style: normal;
+  margin: 0.25rem 0;
+}
+
+.email {
+  font-style: normal;
+  color: rgb(19, 105, 106);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 1rem 1.5rem 1rem 3rem;
+  background-color: rgb(35, 149, 150);
+}
+
+.date {
+  color: rgb(128, 128, 128);
+}
+
+.title {
+  font-weight: bold;
+}
+
+.section-title-container {
+  position: relative;
+  left: -4rem;
+  display: inline-block;
+  margin-top: 3rem;
+  min-width: 16rem;
+}
+
+.triangle {
+  fill: #14686a;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.hero-title::after {
+  content: ' ';
+  color: rgb(35, 149, 150);
+}
+
+.hero-title::before {
+  content: ' ';
+  color: rgb(35, 149, 150);
+}
+
+.cv {
+  justify-content: center;
+  display: flex;
+  max-width: 60rem;
+}
+
+.achievements > p {
+  margin: 1.25rem 0;
+}
+
+#download-btn {
+  display: flex;
+  align-items: center;
+  background-color: rgb(35, 149, 150);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: white;
+  position: fixed;
+  border: 0;
+  bottom: 2rem;
+  right: 2rem;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  outline: none;
+  text-decoration: none;
+}
+
+#download-img {
+  height: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+#original-cv-container {
+  visibility: collapse;
+  text-align: right;
+  color: rgb(128, 128, 128);
+  padding-top: 3rem;
+}
+
+#get-pdf-text {
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+a {
+  color: #009897;
+}
+
+a:hover {
+  color: #008685;
+}
+
+.position {
+  font-weight: normal;
+}
+
+@page {
+  margin: 0;
+  size: auto;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .cv {
+    box-shadow: none;
+    max-width: none;
+  }
+
+  #download-btn {
+    visibility: collapse;
+  }
+
+  .main {
+    box-shadow: none;
+    max-width: none;
+    flex: 2;
+  }
+
+  aside {
+    max-width: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  article {
+    padding-top: 1rem;
+  }
+
+  #original-cv-container {
+    visibility: visible;
+  }
+}
+
+@media not print {
+  @media (max-width: 768px) {
+    body {
+      margin: 0;
+      display: block;
+    }
+
+    aside {
+      max-width: none;
+      border-radius: 0;
+    }
+
+    .cv {
+      display: block;
+      box-shadow: none;
+      border: none;
+    }
+
+    .main {
+      box-shadow: none;
+      border-radius: 0;
+      max-width: initial;
+    }
+  }
+}
