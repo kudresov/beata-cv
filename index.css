@@ -1,12 +1,12 @@
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
   display: flex;
   justify-content: center;
   margin: 2rem;
-  font-family: Helvetica, sans-serif;
+  font-family: Raleway, sans-serif;
   -webkit-print-color-adjust: exact;
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
@@ -22,7 +22,7 @@ aside {
 }
 
 address {
-  margin: 1rem 0 2rem 0;
+  margin-top: 1rem;
 }
 
 ul {
@@ -37,7 +37,7 @@ li {
 
 li:before {
   color: #9baead;
-  content: '–';
+  content: "–";
   text-indent: -8px;
   position: relative;
   left: -0.5rem;
@@ -45,7 +45,7 @@ li:before {
 
 p {
   margin: 0.5rem 0;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
 h3 {
@@ -57,7 +57,7 @@ h3 {
 article {
   color: #242525;
   page-break-inside: avoid;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
   margin-top: 1rem;
 }
 
@@ -130,7 +130,7 @@ aside > section {
   position: relative;
   left: -4rem;
   display: inline-block;
-  margin-top: 3rem;
+  margin-top: 1rem;
   min-width: 16rem;
 }
 
@@ -145,12 +145,12 @@ aside > section {
 }
 
 .hero-title::after {
-  content: ' ';
+  content: " ";
   color: rgb(35, 149, 150);
 }
 
 .hero-title::before {
-  content: ' ';
+  content: " ";
   color: rgb(35, 149, 150);
 }
 
@@ -247,6 +247,11 @@ a:hover {
 
   #original-cv-container {
     visibility: visible;
+  }
+
+  #languages {
+    margin-top: 15rem;
+    padding-top: 2.5rem;
   }
 }
 
