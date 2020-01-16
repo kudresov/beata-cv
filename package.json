@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --print-to-pdf='vitalij-kudresov-cv.pdf' file:///Users/vitalijkudresov/repo/beata-cv/index.html && git add beata-vaiciunaite-cv.pdf"
+    "generate-pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --print-to-pdf='beata-vaiciunaite-cv.pdf' file:///Users/vitalijkudresov/repo/beata-cv/index.html && git add beata-vaiciunaite-cv.pdf"
   },
   "repository": {
     "type": "git",
